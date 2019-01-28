@@ -20,3 +20,12 @@ class Driver {
     });
   }
 }
+
+class Passenger { 
+  constructor(name){
+    this.name = name;
+    this.id = ++driverId;
+    store.passengers.push(this);
+  }
+  
+}
